@@ -25,15 +25,161 @@
     </header>
 
     <!--Hero section här-->
-
+<section class="hero">
+    
+    <div class="hero-content">
+       <h1>Coffee corner</h1>
+      <p>Njut av doften och smaken av nyrostade kaffebönor.</p>
+      <a href="#mer" class="btn">Läs mer</a>
+    </div>
+  </section>
     <!--Image här-->
+    <section>
+      <h2 style="text-align:center">Slideshow Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="img/one.jpg" style="width:1200px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="img/two.jpg" style="width:1200px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="img/three.jpeg" style="width:1200px">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="img/four.webp" style="width:1200px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="img/five.jpg" style="width:1200px">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="img/six.jpg" style="width:1200px">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/one.jpg" style="width:200px" onclick="currentSlide(1)" alt="first image">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/two.jpg" style="width:200px" onclick="currentSlide(2)" alt="second image">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/three.jpeg" style="width:200px" onclick="currentSlide(3)" alt="thirth image">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/four.webp" style="width:200px" onclick="currentSlide(4)" alt="fourth image">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/five.jpg" style="width:200px" onclick="currentSlide(5)" alt="fifth image">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/six.jpg" style="width:200px" onclick="currentSlide(6)" alt="sixth image">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    </section>
 
     <!--Main section här-->
+    <main>
+      <section class="content">
+        <h2>For Coffee Lovers</h2>
+        <p>At Coffee Corner, we believe every cup should be an experience. 
+        From handpicked beans to carefully crafted brews, we bring 
+        warmth, flavor, and tradition to your table.</p>
+        <img src="aerial-view-various-coffee-600nw-1049157986.webp" alt="cups of coffee" class="content-image">
+      </section>
+
+      <section class="content">
+        <h2>Our Coffee Beans</h2>
+        <p>We source our beans from the finest plantations around the world, 
+        carefully roasting them to bring out rich flavors and aromas. 
+        Every bean tells a story of passion and craftsmanship.</p>
+        <img src="istockphoto-1400194993-612x612.webp" alt="hands holding cups of coffee" class="content-image">
+      </section>
+    </main>
 
     <!--Image här-->
 
     <!--Contact section här-->
 
     <!--Footer section här-->
+
+      <footer class="footer-content">
+      <h4>Visit Our Roastery</h4>
+      <p class="footer-text">
+        Experience the art of coffe roasting firsthand. Join us for tastings,
+        workshop, and discover your perfect cup.
+      </p>
+      <ul class="footer-links">
+          <li>Location</li>
+          <li>Hours</li>
+        </ul>
+        <button>Call Now</button>
+        <button>Email Us</button>
+        <p class="footer-text">&copy; 2025 Team Gbg Coffee Shop. All rights reserved.</p>
+
+    <footer>
+      <h4>Visit Our Roastery</h4>
+      <p>
+        Experience the art of coffe roasting firsthand. Join us for tastings,
+        workshop, and discover your perfect cup.
+      </p>
+      <p>&copy; 2025 Team Gbg Coffee Shop. All rights reserved.</p>
+      <ul>
+        <li>Location</li>
+        <li>Hours</li>
+      </ul>
+
+    </footer>
   </body>
 </html>
