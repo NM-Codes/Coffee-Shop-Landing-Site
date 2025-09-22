@@ -2,7 +2,7 @@ main {
   display: flex;
   justify-content: center;
   padding: 60px 20px;
-  background: #faf6f1; /* ljus kaffeton */
+  background: #faf6f1;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -19,7 +19,7 @@ main {
 .content h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: #6b3e26; /* kaffebrun */
+  color: #6b3e26;
 }
 
 .content p {
