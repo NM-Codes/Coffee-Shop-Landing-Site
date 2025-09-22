@@ -1,4 +1,59 @@
 
+/*Nollställning*/
+* {
+    margin: 0;
+}
+
+/*Header*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: #f4f4f4;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.logo-group {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+}
+
+.logo {
+    height: 50px;
+}
+
+.logo-name {
+    height: 30px;
+    justify-items: left;
+    align-self: center;
+    margin-left: 10px;
+}
+
+header ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 40px;
+    margin-right: 10px;
+}
+
+header li {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #4b2b1a;
+    font-size: 1.25rem;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
 
 main {
   display: flex;
