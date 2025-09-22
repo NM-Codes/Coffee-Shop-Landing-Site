@@ -15,8 +15,20 @@ header {
     top: 0;
 }
 
+.logo-group {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+}
+
 .logo {
-    width: 100px;
+    height: 75px;
+}
+
+.logo-name {
+    height: 45px;
+    justify-items: left;
+    align-self: center;
+    margin-left: 10px;
 }
 
 header ul {
