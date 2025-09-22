@@ -21,11 +21,11 @@ header {
 }
 
 .logo {
-    height: 75px;
+    height: 50px;
 }
 
 .logo-name {
-    height: 45px;
+    height: 30px;
     justify-items: left;
     align-self: center;
     margin-left: 10px;
@@ -45,7 +45,7 @@ header li {
 header a {
     text-decoration: none;
     color: #4b2b1a;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 header a:hover {
